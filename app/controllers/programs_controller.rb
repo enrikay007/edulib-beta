@@ -1,19 +1,19 @@
 class ProgramsController < ApplicationController
-  before_action :set_program, only: [:show, :edit, :update, :destroy]
+  before_action :set_program, only: [:show, :edit, :update, :destroy] 
   before_action :authenticate_user!, except: [:search, :index, :show]
-
-  # GET /programs
-  # GET /programs.json
-  def index
-    @programs = Program.all
-  end
-
-  def search
+  
+   def search
   if params[:search].present?
       @programs = Program.search(params[:search])
     else
       @programs = Program.all
     end
+  end
+  
+  # GET /programs
+  # GET /programs.json
+  def index
+    @programs = Program.all
   end
 
   # GET /programs/1
@@ -78,6 +78,6 @@ class ProgramsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def program_params
-      params.require(:program).permit(:name, :image, :lecturers, :description, :level, :prerequisite, :literature, :syllabus, :hours, :skills, :workload, :faq, :capacity, :study_board, :faculty)
+      params.require(:program).permit(:name, :image, :lecturers, :description, :level, :prerequisite, :literature, :syllabus, :hours, :skills, :workload, :faq, :capacity, :studyboard, :faculty, :remove_uploads,uploads: [])
     end
 end

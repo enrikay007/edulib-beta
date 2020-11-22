@@ -4,9 +4,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4', group: :development 
+gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -25,10 +25,11 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# gem 'paperclip'
 gem 'font-awesome-sass', '~> 5.13.0'
 gem 'image_processing', '~> 1.2'
 
-
+gem 'jquery-rails'
 ##gem 'searchkick'
 gem 'devise'
 gem "mini_magick"
@@ -36,8 +37,6 @@ gem 'figaro'
 gem 'fog-aws'
 gem 'carrierwave', '~> 2.0'
 gem 'pg', group: :production
-
-gem 'rails_12factor', group: :production 
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

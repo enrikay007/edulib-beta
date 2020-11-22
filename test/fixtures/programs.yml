@@ -14,7 +14,7 @@ one:
   workload: MyText
   faq: MyText
   capacity: MyString
-  study_board: MyString
+  studyboard: MyString
   faculty: MyString
 
 two:
@@ -31,5 +31,5 @@ two:
   workload: MyText
   faq: MyText
   capacity: MyString
-  study_board: MyString
+  studyboard: MyString
   faculty: MyString

@@ -1,17 +1,11 @@
 class PagesController < ApplicationController
+  def home
+  end
+
   def about
   end
 
-  def programs
-  end
-
-  def research
-  end
-
-  def partnership
-  end
-
-  def news
+  def service
   end
 
   def faq

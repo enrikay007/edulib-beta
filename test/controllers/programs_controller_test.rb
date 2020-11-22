@@ -17,7 +17,7 @@ class ProgramsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create program" do
     assert_difference('Program.count') do
-      post programs_url, params: { program: { capacity: @program.capacity, description: @program.description, faculty: @program.faculty, faq: @program.faq, hours: @program.hours, image: @program.image, lecturers: @program.lecturers, level: @program.level, literature: @program.literature, name: @program.name, prerequisite: @program.prerequisite, skills: @program.skills, study_board: @program.study_board, syllabus: @program.syllabus, workload: @program.workload } }
+      post programs_url, params: { program: { capacity: @program.capacity, description: @program.description, faculty: @program.faculty, faq: @program.faq, hours: @program.hours, image: @program.image, lecturers: @program.lecturers, level: @program.level, literature: @program.literature, name: @program.name, prerequisite: @program.prerequisite, skills: @program.skills, studyboard: @program.studyboard, syllabus: @program.syllabus, workload: @program.workload } }
     end
 
     assert_redirected_to program_url(Program.last)
@@ -34,7 +34,7 @@ class ProgramsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update program" do
-    patch program_url(@program), params: { program: { capacity: @program.capacity, description: @program.description, faculty: @program.faculty, faq: @program.faq, hours: @program.hours, image: @program.image, lecturers: @program.lecturers, level: @program.level, literature: @program.literature, name: @program.name, prerequisite: @program.prerequisite, skills: @program.skills, study_board: @program.study_board, syllabus: @program.syllabus, workload: @program.workload } }
+    patch program_url(@program), params: { program: { capacity: @program.capacity, description: @program.description, faculty: @program.faculty, faq: @program.faq, hours: @program.hours, image: @program.image, lecturers: @program.lecturers, level: @program.level, literature: @program.literature, name: @program.name, prerequisite: @program.prerequisite, skills: @program.skills, studyboard: @program.studyboard, syllabus: @program.syllabus, workload: @program.workload } }
     assert_redirected_to program_url(@program)
   end
 

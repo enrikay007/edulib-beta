@@ -26,7 +26,7 @@ class ProgramsTest < ApplicationSystemTestCase
     fill_in "Name", with: @program.name
     fill_in "Prerequisite", with: @program.prerequisite
     fill_in "Skills", with: @program.skills
-    fill_in "Study board", with: @program.study_board
+    fill_in "Studyboard", with: @program.studyboard
     fill_in "Syllabus", with: @program.syllabus
     fill_in "Workload", with: @program.workload
     click_on "Create Program"
@@ -51,7 +51,7 @@ class ProgramsTest < ApplicationSystemTestCase
     fill_in "Name", with: @program.name
     fill_in "Prerequisite", with: @program.prerequisite
     fill_in "Skills", with: @program.skills
-    fill_in "Study board", with: @program.study_board
+    fill_in "Studyboard", with: @program.studyboard
     fill_in "Syllabus", with: @program.syllabus
     fill_in "Workload", with: @program.workload
     click_on "Update Program"
